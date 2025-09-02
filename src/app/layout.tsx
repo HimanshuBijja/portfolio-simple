@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Karla } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -11,6 +11,18 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  weight: "400",
+  variable: "--font-poppins",
+  subsets: ["latin"],
+});
+
+const karla = Karla({
+  weight: "400",
+  variable: "--font-karla",
   subsets: ["latin"],
 });
 
@@ -27,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en " suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-3xl mx-auto`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${karla.variable} antialiased max-w-3xl mx-auto `}
       >
         <ThemeProvider
           attribute="class"
@@ -36,7 +48,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NavBar />
-          {children}
+          <main className="px-4 my-12 font-poppins">{children}</main>
         </ThemeProvider>
       </body>
     </html>

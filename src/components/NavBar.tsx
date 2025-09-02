@@ -7,13 +7,6 @@ import { useEffect, useState } from "react";
 import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 interface NavItem {
   label: string;
@@ -51,8 +44,8 @@ const NavBar = () => {
   //   }, []);
 
   return (
-    <nav className="flex flex-row items-center justify-between p-4 max-md:px-6 border-b-2">
-      <span>Himanshu Bijja</span>
+    <nav className="flex flex-row items-center justify-between p-4 max-md:px-6 border-b-2 font-medium font-geist-mono text-base">
+      <span className="font-karla text-xl font-bold">Himanshu Bijja</span>
       <div></div>
       <div className="flex flex-row items-center gap-6">
         <ToggleTheme />
