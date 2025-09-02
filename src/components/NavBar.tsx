@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 interface NavItem {
   label: string;
@@ -49,14 +50,14 @@ const NavBar = () => {
       <div></div>
       <div className="flex flex-row items-center gap-6">
         <ToggleTheme />
-        <div className="md:hidden">
+        <div className="md:hidden" >
           {isMenuOpen ? (
             <X onClick={() => setIsMenuOpen(false)} />
           ) : (
             <Menu onClick={() => setIsMenuOpen(true)} />
           )}
           {isMenuOpen && (
-            <ul className="flex flex-col gap-4 fixed inset-x-0 bottom-0 top-25 pb-35 justify-center items-center bg-background/50 z-50 transition-transform transform">
+            <ul className="flex flex-col gap-4 fixed inset-x-0 bottom-0 top-25 pb-35 justify-center items-center bg-background/50 z-50 transition-transform transform" onClick={() => setIsMenuOpen(!isMenuOpen)} >
               <RenderNavItems />
             </ul>
           )}
@@ -77,17 +78,18 @@ const RenderNavItems = () => {
     <>
       {navItems.map((item) =>
         currentPath === item.href.split("/")[1] ? (
-          <a
+          <span
             key={item.label}
-            className="bg-foreground/90 text-background px-4 py-1 rounded-2xl"
-            href={item.href}
+            className="bg-foreground/90 text-background px-4 py-1 rounded-2xl cursor-pointer"
           >
             {item.label}
-          </a>
+          </span>
         ) : (
-          <NavItem key={item.label}>
-            <a href={item.href}>{item.label}</a>
-          </NavItem>
+          <Link key={item.label} href={item.href}>
+            <NavItem>
+              <span >{item.label}</span>
+            </NavItem>
+          </Link>
         )
       )}
     </>
