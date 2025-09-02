@@ -5,9 +5,9 @@ function About() {
     <>
       <Wrapper title="About">
         <p>
-          tldr; mostly self-taught by shipping things on the internet into tech
-          and deep science — things that reshape us fascinated by space,
-          science, and ideas that expand the mind
+          tldr; mostly self-taught by shipping things on the internet <br />
+          into tech and deep science — things that reshape us <br />
+          fascinated by space,s science, and ideas that expand the mind
         </p>
       </Wrapper>
     </>

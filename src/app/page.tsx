@@ -1,4 +1,5 @@
 import About from "@/components/home/About";
+import EducationSection from "@/components/home/Education";
 import GitHubStats from "@/components/home/GitHubStats";
 import RecentWork from "@/components/home/RecentWork";
 import Skills from "@/components/home/Skills";
@@ -12,6 +13,7 @@ export default function Home() {
       {/* <RecentWork /> */}
       <GitHubStats />
       <Skills />
+      <EducationSection />
     </section>
   );
 }
