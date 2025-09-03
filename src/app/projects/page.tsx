@@ -58,49 +58,49 @@ const icons: Record<string, Icon> = {
 
 const projects: Project[] = [
   {
-    title: "Project 1",
+    title: "OneStop",
     description: "Description for project 1 Description for project 1Description for project 1Description for project 1",
-    image: "/project1.jpg",
+    image: "/onestop-code.png",
     links: [
       {
         name: "github",
-        url: "/projects/project1",
+        url: "https://github.com/HimanshuBijja/onestop",
       },
       {
         name: "live",
-        url: "/projects/project1/live",
+        url: "https://onestop-code.vercel.app/",
       },
     ],
     tags: ["Next.js", "React", "TypeScript", 'TailwindCSS', 'Framer Motion'],
   },
   {
-    title: "Project 2",
+    title: "Kryonex",
     description: "Description for project 2",
-    image: "/kryonex.jpg",
+    image: "/kryonex.png",
     links: [
       {
         name: "github",
-        url: "/projects/project2",
+        url: "https://github.com/HimanshuBijja/kryonex",
       },
       {
         name: "live",
-        url: "/projects/project2/live",
+        url: "https://kryonex-zeta.vercel.app/",
       },
     ],
     tags: []
   },
   {
-    title: "Project 3",
+    title: "The-Rev-Room",
     description: "Description for project 3",
-    image: "/project3.jpg",
+    image: "/the-rev-room.png",
     links: [
       {
         name: "github",
-        url: "/projects/project3",
+        url: "https://github.com/HimanshuBijja/mc-laren",
       },
       {
         name: "live",
-        url: "/projects/project3/live",
+        url: "https://the-rev-room.vercel.app/",
       },
     ],
   },
@@ -112,18 +112,18 @@ const Page = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {projects.map((project, index) => (
           <Card key={index} className="pt-0 mt-0 overflow-hidden gap-2">
-            <CardContent className="p-0 m-0 rounded-none">
-              <div key={index} className="border p-4 rounded">
+            <CardContent className="p-0 m-0 rounded-none ">
+              <div key={index} className=" w-full aspect-[16/9] relative rounded mx-auto">
                 <Image
                   key={index}
                   src={project.image}
                   alt={project.title}
-                  width={300}
-                  height={200}
+                 fill
+                 className="object-cover object-[0_0%]"
                 />
               </div>
             </CardContent>
-            <CardHeader className="flex items-center justify-between">
+            <CardHeader className="flex items-center justify-between px-4">
               <CardTitle>{project.title}</CardTitle>
               <CardAction>
                 <div className="flex gap-2">
@@ -132,7 +132,7 @@ const Page = () => {
                     return (
                       <Link key={linkIndex} href={link.url}>
                         <Tooltip>
-                          <TooltipTrigger>
+                          <TooltipTrigger asChild>
                             <Button variant="outline" size="icon">
                               {Icon && <Icon />}
                             </Button>
@@ -147,12 +147,12 @@ const Page = () => {
                 </div>
               </CardAction>
             </CardHeader>
-            <CardContent>
+            <CardContent className="px-4">
               <CardDescription>{project.description}</CardDescription>
 
             </CardContent>
-            <CardFooter>
-              <div className="flex flex-wrap gap-1 line-clamp-1">
+            <CardFooter className="px-4">
+              <div className="flex flex-wrap gap-1">
                 {project.tags?.map((tag, tagIndex) => (
                   <Button key={tagIndex} variant="outline" size="sm">
                     {tag}
