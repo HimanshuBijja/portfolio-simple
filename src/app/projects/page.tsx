@@ -59,7 +59,7 @@ const icons: Record<string, Icon> = {
 const projects: Project[] = [
   {
     title: "OneStop",
-    description: "Description for project 1 Description for project 1Description for project 1Description for project 1",
+    description: "Tool that consolidates user activity from various competitive programming platforms. Integrated APIs to fetch and display upcoming contests in a single dashboard.",
     image: "/onestop-code.png",
     links: [
       {
@@ -71,11 +71,11 @@ const projects: Project[] = [
         url: "https://onestop-code.vercel.app/",
       },
     ],
-    tags: ["Next.js", "React", "TypeScript", 'TailwindCSS', 'Framer Motion'],
+    tags: ["Next.js", 'TailwindCSS', "REST APIs", "Web Scraping", "Figma"],
   },
   {
     title: "Kryonex",
-    description: "Description for project 2",
+    description: "An anonymous messaging app where users can share messages without revealing their identity to registered accounts",
     image: "/kryonex.png",
     links: [
       {
@@ -87,11 +87,11 @@ const projects: Project[] = [
         url: "https://kryonex-zeta.vercel.app/",
       },
     ],
-    tags: []
+    tags: ["Next.js", "TypeScript", "MongoDB" , "NextAuth.js" , "Resend", "TailwindCSS", "AI Integration", "Figma" ]
   },
   {
     title: "The-Rev-Room",
-    description: "Description for project 3",
+    description: "An Website to showcase Figma designs and CSS animations",
     image: "/the-rev-room.png",
     links: [
       {
@@ -103,6 +103,7 @@ const projects: Project[] = [
         url: "https://the-rev-room.vercel.app/",
       },
     ],
+    tags: ["React", "TailwindCSS", "Figma", "Framer Motion"]
   },
 ];
 

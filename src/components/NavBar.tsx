@@ -23,10 +23,10 @@ const navItems: NavItem[] = [
     label: "Projects",
     href: "/projects",
   },
-  {
-    label: "Contact",
-    href: "/contact",
-  },
+  // {
+  //   label: "Contact",
+  //   href: "/contact",
+  // },
 ];
 
 const NavBar = () => {
@@ -57,7 +57,7 @@ const NavBar = () => {
             <Menu onClick={() => setIsMenuOpen(true)} />
           )}
           {isMenuOpen && (
-            <ul className="flex flex-col gap-4 fixed inset-x-0 bottom-0 top-25 pb-35 justify-center items-center bg-background/50 z-50 transition-transform transform" onClick={() => setIsMenuOpen(!isMenuOpen)} >
+            <ul className="flex flex-col gap-4 fixed inset-x-0 bottom-0 top-25 pb-35 justify-center items-center bg-background/90 z-50 transition-transform transform" onClick={() => setIsMenuOpen(!isMenuOpen)} >
               <RenderNavItems />
             </ul>
           )}
