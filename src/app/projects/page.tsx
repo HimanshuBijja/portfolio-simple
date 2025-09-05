@@ -57,22 +57,7 @@ const icons: Record<string, Icon> = {
 
 
 const projects: Project[] = [
-  {
-    title: "OneStop",
-    description: "Tool that consolidates user activity from various competitive programming platforms. Integrated APIs to fetch and display upcoming contests in a single dashboard.",
-    image: "/onestop-code.png",
-    links: [
-      {
-        name: "github",
-        url: "https://github.com/HimanshuBijja/onestop",
-      },
-      {
-        name: "live",
-        url: "https://onestop-code.vercel.app/",
-      },
-    ],
-    tags: ["Next.js", 'TailwindCSS', "REST APIs", "Web Scraping", "Figma"],
-  },
+
   {
     title: "Kryonex",
     description: "An anonymous messaging app where users can share messages without revealing their identity to registered accounts",
@@ -90,6 +75,22 @@ const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "MongoDB" , "NextAuth.js" , "Resend", "TailwindCSS", "AI Integration", "Figma" ]
   },
   {
+    title: "Obviously Limited",
+    description: "An Website to showcase Figma designs and CSS animations",
+    image: "/obviously-limited.png",
+    links: [
+      {
+        name: "github",
+        url: "https://github.com/HimanshuBijja",
+      },
+      {
+        name: "live",
+        url: "https://obviously-limited.vercel.app/",
+      },
+    ],
+    tags: ["React", "CSS", "Figma"]
+  },
+  {
     title: "The-Rev-Room",
     description: "An Website to showcase Figma designs and CSS animations",
     image: "/the-rev-room.png",
@@ -104,6 +105,22 @@ const projects: Project[] = [
       },
     ],
     tags: ["React", "TailwindCSS", "Figma", "Framer Motion"]
+  },
+    {
+    title: "OneStop",
+    description: "Tool that consolidates user activity from various competitive programming platforms. Integrated APIs to fetch and display upcoming contests in a single dashboard.",
+    image: "/onestop-code.png",
+    links: [
+      {
+        name: "github",
+        url: "https://github.com/HimanshuBijja/onestop",
+      },
+      {
+        name: "live",
+        url: "https://onestop-code.vercel.app/",
+      },
+    ],
+    tags: ["Next.js", 'TailwindCSS', "REST APIs", "Web Scraping", "Figma"],
   },
 ];
 
