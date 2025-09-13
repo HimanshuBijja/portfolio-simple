@@ -26,7 +26,6 @@ import {
 } from "@/components/ui/tooltip";
 import { Tags } from "@/types/LanguageTags";
 
-
 interface Icon {
   icon: string | LucideIcon;
 }
@@ -43,7 +42,6 @@ interface Project {
   tags?: Tags[];
 }
 
-
 const icons: Record<string, Icon> = {
   github: {
     icon: GithubIcon,
@@ -53,14 +51,37 @@ const icons: Record<string, Icon> = {
   },
 };
 
-
-
-
 const projects: Project[] = [
-
+  {
+    title: "Recipe Ideas",
+    description:
+      "A Recipe finder website that suggests recipes based on the name, ingredients and area. Best for trying out new recipes and cuisines.",
+    image: "/recipe-ideas.png",
+    links: [
+      {
+        name: "github",
+        url: "https://github.com/HimanshuBijja/recipe-ideas",
+      },
+      {
+        name: "live",
+        url: "https://recipe-ideas-akz.vercel.app/",
+      },
+    ],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "MongoDB",
+      "REST APIs",
+      "NextAuth.js",
+      "Resend",
+      "TailwindCSS",
+      "Figma",
+    ],
+  },
   {
     title: "Kryonex",
-    description: "An anonymous messaging app where users can share messages without revealing their identity to registered accounts",
+    description:
+      "An anonymous messaging app where users can share messages without revealing their identity to registered accounts",
     image: "/kryonex.png",
     links: [
       {
@@ -72,7 +93,16 @@ const projects: Project[] = [
         url: "https://kryonex-zeta.vercel.app/",
       },
     ],
-    tags: ["Next.js", "TypeScript", "MongoDB" , "NextAuth.js" , "Resend", "TailwindCSS", "AI Integration", "Figma" ]
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "MongoDB",
+      "NextAuth.js",
+      "Resend",
+      "TailwindCSS",
+      "AI Integration",
+      "Figma",
+    ],
   },
   {
     title: "Obviously Limited",
@@ -88,8 +118,9 @@ const projects: Project[] = [
         url: "https://obviously-limited.vercel.app/",
       },
     ],
-    tags: ["React", "CSS", "Figma"]
+    tags: ["React", "CSS", "Figma"],
   },
+
   {
     title: "The-Rev-Room",
     description: "An Website to showcase Figma designs and CSS animations",
@@ -104,11 +135,13 @@ const projects: Project[] = [
         url: "https://the-rev-room.vercel.app/",
       },
     ],
-    tags: ["React", "TailwindCSS", "Figma", "Framer Motion"]
+    tags: ["React", "TailwindCSS", "Figma", "Framer Motion"],
   },
-    {
+
+  {
     title: "OneStop",
-    description: "Tool that consolidates user activity from various competitive programming platforms. Integrated APIs to fetch and display upcoming contests in a single dashboard.",
+    description:
+      "Tool that consolidates user activity from various competitive programming platforms. Integrated APIs to fetch and display upcoming contests in a single dashboard.",
     image: "/onestop-code.png",
     links: [
       {
@@ -120,7 +153,7 @@ const projects: Project[] = [
         url: "https://onestop-code.vercel.app/",
       },
     ],
-    tags: ["Next.js", 'TailwindCSS', "REST APIs", "Web Scraping", "Figma"],
+    tags: ["Next.js", "TailwindCSS", "REST APIs", "Web Scraping", "Figma"],
   },
 ];
 
@@ -131,13 +164,16 @@ const Page = () => {
         {projects.map((project, index) => (
           <Card key={index} className="pt-0 mt-0 overflow-hidden gap-2">
             <CardContent className="p-0 m-0 rounded-none ">
-              <div key={index} className=" w-full aspect-[16/9] relative rounded mx-auto">
+              <div
+                key={index}
+                className=" w-full aspect-[16/9] relative rounded mx-auto"
+              >
                 <Image
                   key={index}
                   src={project.image}
                   alt={project.title}
-                 fill
-                 className="object-cover object-[0_0%]"
+                  fill
+                  className="object-cover object-[0_0%]"
                 />
               </div>
             </CardContent>
@@ -167,7 +203,6 @@ const Page = () => {
             </CardHeader>
             <CardContent className="px-4">
               <CardDescription>{project.description}</CardDescription>
-
             </CardContent>
             <CardFooter className="px-4">
               <div className="flex flex-wrap gap-1">
