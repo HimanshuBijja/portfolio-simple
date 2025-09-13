@@ -163,20 +163,22 @@ const Page = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {projects.map((project, index) => (
           <Card key={index} className="pt-0 mt-0 overflow-hidden gap-2">
-            <CardContent className="p-0 m-0 rounded-none ">
-              <div
-                key={index}
-                className=" w-full aspect-[16/9] relative rounded mx-auto"
-              >
-                <Image
+            <Link href={project.links[1].url} target="_blank">
+              <CardContent className="p-0 m-0 rounded-none ">
+                <div
                   key={index}
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover object-[0_0%]"
-                />
-              </div>
-            </CardContent>
+                  className=" w-full aspect-[16/9] relative rounded mx-auto"
+                >
+                  <Image
+                    key={index}
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover object-[0_0%]"
+                  />
+                </div>
+              </CardContent>
+            </Link>
             <CardHeader className="flex items-center justify-between px-4">
               <CardTitle>{project.title}</CardTitle>
               <CardAction>
