@@ -52,32 +52,32 @@ const icons: Record<string, Icon> = {
 };
 
 const projects: Project[] = [
-  {
-    title: "Recipe Ideas",
-    description:
-      "A Recipe finder website that suggests recipes based on the name, ingredients and area. Best for trying out new recipes and cuisines.",
-    image: "/recipe-ideas.png",
-    links: [
-      {
-        name: "github",
-        url: "https://github.com/HimanshuBijja/recipe-ideas",
-      },
-      {
-        name: "live",
-        url: "https://recipe-ideas-akz.vercel.app/",
-      },
-    ],
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "MongoDB",
-      "REST APIs",
-      "NextAuth.js",
-      "Resend",
-      "TailwindCSS",
-      "Figma",
-    ],
-  },
+  // {
+  //   title: "Recipe Ideas",
+  //   description:
+  //     "A Recipe finder website that suggests recipes based on the name, ingredients and area. Best for trying out new recipes and cuisines.",
+  //   image: "/recipe-ideas.png",
+  //   links: [
+  //     {
+  //       name: "github",
+  //       url: "https://github.com/HimanshuBijja/recipe-ideas",
+  //     },
+  //     {
+  //       name: "live",
+  //       url: "https://recipe-ideas-akz.vercel.app/",
+  //     },
+  //   ],
+  //   tags: [
+  //     "Next.js",
+  //     "TypeScript",
+  //     "MongoDB",
+  //     "REST APIs",
+  //     "NextAuth.js",
+  //     "Resend",
+  //     "TailwindCSS",
+  //     "Figma",
+  //   ],
+  // },
   {
     title: "Kryonex",
     description:
