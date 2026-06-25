@@ -10,7 +10,7 @@ export default function Home() {
     <section>
       <About />
       <Socials />
-      {/* <RecentWork /> */}
+      <RecentWork />
       <GitHubStats />
       <Skills />
       <EducationSection />

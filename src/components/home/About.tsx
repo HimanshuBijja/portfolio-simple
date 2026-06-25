@@ -22,12 +22,12 @@ function About() {
           into tech and deep science — things that reshape us <br />
           fascinated by space,s science, and ideas that expand the mind
         </p>
-        <Link href="/projects">
+        {/* <Link href="#projects">
           <Button className="mt-8 flex flex-row gap-2">
             Projects
             <ArrowUpRight />
           </Button>
-        </Link>
+        </Link> */}
       </Wrapper>
     </>
   );
