@@ -68,23 +68,23 @@ const projects: Project[] = [
     ],
     tags: ["React", "CSS", "Figma"],
   },
-  {
-    title: "Future City Police",
-    description:
-      "An advanced police commissionerate portal layout showcasing interactive maps, emergency alert systems, incident reporting feeds, and multilingual tools.",
-    image: "/future-city.png",
-    links: [
-      {
-        name: "github",
-        url: "https://github.com/HimanshuBijja",
-      },
-      {
-        name: "live",
-        url: "https://furute-city.vercel.app/",
-      },
-    ],
-    tags: ["React", "TailwindCSS", "JavaScript"],
-  },
+  // {
+  //   title: "Future City Police",
+  //   description:
+  //     "An advanced police commissionerate portal layout showcasing interactive maps, emergency alert systems, incident reporting feeds, and multilingual tools.",
+  //   image: "/future-city.png",
+  //   links: [
+  //     {
+  //       name: "github",
+  //       url: "https://github.com/HimanshuBijja",
+  //     },
+  //     {
+  //       name: "live",
+  //       url: "https://furute-city.vercel.app/",
+  //     },
+  //   ],
+  //   tags: ["React", "TailwindCSS", "JavaScript"],
+  // },
   {
     title: "Cloud Community Club",
     description:
